@@ -1,0 +1,41 @@
+/* Tab — Channel Design System
+   Estilos a implementar com base no sistema legado.
+   Substitua este arquivo com o CSS real quando o componente for desenvolvido. */
+
+.chn-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--chn-color-gray-400);
+  margin-bottom: var(--chn-margin-md);
+  font-family: var(--chn-font-family);
+}
+
+.chn-tab {
+  padding: 4px 12px;
+  font-size: var(--chn-font-size-base);
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background: transparent;
+  color: var(--chn-color-link);
+  position: relative;
+  bottom: -1px;
+}
+
+.chn-tab:hover {
+  background: var(--chn-color-gray-200);
+}
+
+.chn-tab.is-active {
+  background: var(--chn-color-white);
+  border-color: var(--chn-color-gray-400);
+  color: var(--chn-color-black);
+  font-weight: var(--chn-font-weight-bold);
+}
+
+.chn-tab-panel {
+  display: none;
+}
+
+.chn-tab-panel.is-active {
+  display: block;
+}

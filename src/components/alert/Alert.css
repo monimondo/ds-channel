@@ -1,0 +1,60 @@
+/**
+ * alert.css
+ * High-fidelity styles for feedback alerts
+ */
+
+.chn-alert {
+  font-family: var(--chn-font-family);
+  font-size: var(--chn-font-size-base);
+  padding: var(--chn-padding-sm) var(--chn-padding-default);
+  border-radius: var(--chn-border-radius-4);
+  display: flex;
+  align-items: center;
+  gap: var(--chn-margin-xs);
+  margin-bottom: var(--chn-margin-sm);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.chn-alert-success {
+  background-color: var(--chn-color-success-bg);
+  color: var(--chn-color-success-text);
+  border-color: #DBEECE;
+}
+
+.chn-alert-error {
+  background-color: var(--chn-color-error-bg);
+  color: var(--chn-color-error-text);
+  border-color: #FFE1E1;
+}
+
+.chn-alert-warning {
+  background-color: var(--chn-color-warning-bg);
+  color: var(--chn-color-warning-text);
+  border-color: #FFF6D1;
+}
+
+/* Floating Feedback Popup (Specific Legacy Visual) */
+.chn-feedback-popup {
+  background: #7CB372;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-bottom: 3px solid #5C8A54; /* 3D effect seen in print */
+  min-width: 300px;
+  pointer-events: none;
+}
+
+.chn-feedback-icon {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
