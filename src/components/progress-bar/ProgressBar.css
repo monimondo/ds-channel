@@ -1,0 +1,47 @@
+.ds-progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #E0E0E0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.ds-progress-bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  width: 0;
+}
+
+/* Status: Não Iniciado */
+.ds-progress-bar.status-not-started .ds-progress-bar-fill {
+  width: 0%;
+  background-color: #AAAAAA;
+}
+
+/* Status: Em Progresso */
+.ds-progress-bar.status-in-progress .ds-progress-bar-fill {
+  background-color: #1565C0; /* Azul Padrão */
+}
+
+/* Status: Completo */
+.ds-progress-bar.status-complete .ds-progress-bar-fill {
+  width: 100%;
+  background-color: #4CAF50; /* Verde */
+}
+
+/* Variantes de cores do sistema */
+.ds-progress-bar.color-green .ds-progress-bar-fill { background-color: #4CAF50; }
+.ds-progress-bar.color-yellow .ds-progress-bar-fill { background-color: #E6B800; }
+.ds-progress-bar.color-red .ds-progress-bar-fill { background-color: #CC3333; }
+.ds-progress-bar.color-blue .ds-progress-bar-fill { background-color: #1565C0; }
+.ds-progress-bar.color-gray .ds-progress-bar-fill { background-color: #AAAAAA; }
+
+.ds-progress-label {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 10px;
+  color: #333;
+  margin-top: 4px;
+  display: block;
+}

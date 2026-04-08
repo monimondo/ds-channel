@@ -1,4 +1,4 @@
-﻿import './Table.css';
+import './Table.css';
 import { Button } from '../button/Button.js';
 
 export default {
@@ -136,6 +136,7 @@ export const PadraoCompleta = {
             </div>
           </div>
         </div>
+        <div class="chn-table-responsive">
         <table class="legacy-table">
           <thead>
             <tr style="background:#E5E5E5">
@@ -162,34 +163,26 @@ export const PadraoCompleta = {
           <tbody>
             <tr class="row-selected">
               <td style="text-align:center"><input type="checkbox" checked/></td>
-              <td>1</td>
-              <td>Plano de Estratégia Comercial</td>
-              <td>Marcos Souza</td>
+              <td>PRJ-001</td>
+              <td>Plano de Expansão Regional Norte</td>
+              <td>Elkar Almeida</td>
               <td>Em andamento</td>
-              <td>12/12/2026</td>
-              <td>${actionIcons}</td>
-            </tr>
-            <tr class="row-associated-group">
-              <td style="text-align:center"><input type="checkbox"/></td>
-              <td>PH-01</td>
-              <td><img src="assets/img/ico_bola_amarela.gif"/> Projeto de Expansão Norte</td>
-              <td>Ana Paula</td>
-              <td>Aguardando</td>
-              <td>20/11/2026</td>
+              <td>12/12/2025</td>
               <td>${actionIcons}</td>
             </tr>
             <tr>
               <td style="text-align:center"><input type="checkbox"/></td>
-              <td>99</td>
-              <td>Migração de Infraestrutura Cloud</td>
-              <td>Carlos Lima</td>
-              <td>Não iniciado</td>
-              <td>05/01/2027</td>
+              <td>PRJ-015</td>
+              <td>Upgrade da Infraestrutura de Data Center</td>
+              <td>Ana Paula Ferreira</td>
+              <td>Planejado</td>
+              <td>30/10/2025</td>
               <td>${actionIcons}</td>
             </tr>
           </tbody>
         </table>
-        ${paginacao(6)}
+        ${paginacao(5)}
+        </div>
         ${legenda}
       </div>
     </div>
@@ -198,6 +191,7 @@ export const PadraoCompleta = {
 
 export const SimplesSemFiltro = {
   render: () => `
+    <div class="chn-table-responsive">
     <table class="legacy-table">
       <thead>
         <tr style="background:#E5E5E5">
@@ -222,6 +216,7 @@ export const SimplesSemFiltro = {
         </tr>
       </tbody>
     </table>
+    </div>
   `,
 };
 
@@ -234,37 +229,45 @@ export const AcordeonConfigurado = {
           <span>Grupos de Planos de Ações (2 itens)</span>
         </div>
       </div>
+      <div class="chn-table-responsive">
       <table class="legacy-table">
         <thead>
-          <tr style="background:#E5E5E5">
-             <th style="width:30px"></th>
-             <th>Nome do Grupo</th>
-             <th>Responsável</th>
-             <th style="width:100px; text-align:center">Planos</th>
-             <th style="width:80px; text-align:center">Ações</th>
+          <tr>
+            <th style="width:30px"></th>
+            <th>Nome do Objetivo</th>
+            <th style="width:120px">Tipo</th>
+            <th style="width:120px">Perspectiva</th>
+            <th style="width:120px; text-align:center">Ações</th>
           </tr>
         </thead>
         <tbody>
-           <tr class="accordion-row-title is-active is-open">
-              <td style="text-align:center" onclick="event.stopPropagation()"><input type="checkbox" checked/></td>
-              <td style="display:flex; align-items:center; gap:8px; border:none; height:32px">
-                <span class="expander-icon fa fa-caret-down"></span>
-                <span>Grupo Logística</span>
-              </td>
-              <td>Ricardo Mendes</td>
-              <td style="text-align:center">5</td>
-              <td style="text-align:center">${actionIcons}</td>
-           </tr>
-           <tr class="accordion-row-details is-open">
-             <td colspan="5">
-                <div class="nested-table-container">
-                  <div class="nested-table-title">Planos do Grupo:</div>
-                  <table class="nested-table">
+          <tr class="accordion-row-title">
+            <td style="text-align:center"><span class="fa fa-caret-down expander-icon"></span></td>
+            <td><b>Aumentar a rentabilidade do negócio</b></td>
+            <td>Financeiro</td>
+            <td>Sustentabilidade</td>
+            <td>${actionIcons}</td>
+          </tr>
+          <tr class="accordion-row-details is-open">
+            <td colspan="5">
+              <div class="nested-table-container">
+                 <div class="nested-table-title">Key Results</div>
+                 <table class="nested-table">
                     <thead>
-                      <tr><th>Código</th><th>Nome do Plano</th><th>Status</th></tr>
+                      <tr>
+                        <th>Key Result</th>
+                        <th style="width:100px">Meta</th>
+                        <th style="width:100px">Atual</th>
+                        <th style="width:80px">Progresso</th>
+                      </tr>
                     </thead>
                     <tbody>
-                      <tr><td>L-01</td><td>Frota Própria</td><td>Finalizado</td></tr>
+                      <tr>
+                        <td>Aumentar receita recorrente em 20%</td>
+                        <td>R$ 1.2M</td>
+                        <td>R$ 950k</td>
+                        <td>79%</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -286,7 +289,7 @@ export const ComSubmenuAcoes = {
     },
   },
   render: () => `
-<div class="table-responsive" style="overflow: visible; width: 100%;">
+<div class="chn-table-responsive" style="overflow: visible; width: 100%;">
         <table class="legacy-table" id="table-objetivos">
           <thead>
             <!-- Cabeçalho de colunas -->
@@ -356,11 +359,9 @@ export const ComSubmenuAcoes = {
                         Associar atividades
                       </a>
                       <div class="legacy-action-submenu-separator"></div>
-                      <a class="legacy-action-submenu-item"
-                        onclick="openDrawer('Aumentar a Receita', 1); closeAllMenus();">
+                      <a class="legacy-action-submenu-item" onclick="alert('Funcionalidade em desenvolvimento'); closeAllMenus();">
                         <i class="fa fa-key" style="margin-right:4px;font-size:12px;width:14px;text-align:center;"></i>
-                        Gerenciar KRs
-                        <span class="badge-new" style="margin-left:4px;">novo</span>
+                        Ações Rápidas
                       </a>
                     </div>
                   </div>
@@ -370,8 +371,7 @@ export const ComSubmenuAcoes = {
                     <img src="assets/img/ico_ligado.gif" alt="Habilitar/Desabilitar" />
                   </span>
                   <!-- 3: Gerenciar KRs -->
-                  <button class="icon-kr" title="Gerenciar Key Results (KRs)"
-                    onclick="openDrawer('Aumentar a Receita', 1)">KR</button>
+                  <button class="icon-kr" title="Ver Detalhes">KR</button>
                   <!-- 4: Editar -->
                   <span class="action-icon" title="Editar objetivo" onclick="openModalEditarObjetivo()"
                     style="cursor:pointer;">
@@ -420,19 +420,16 @@ export const ComSubmenuAcoes = {
                         Associar atividades
                       </a>
                       <div class="legacy-action-submenu-separator"></div>
-                      <a class="legacy-action-submenu-item"
-                        onclick="openDrawer('Melhorar Retenção de Clientes', 2); closeAllMenus();">
+                      <a class="legacy-action-submenu-item" onclick="alert('Funcionalidade em desenvolvimento'); closeAllMenus();">
                         <i class="fa fa-key" style="margin-right:4px;font-size:12px;width:14px;text-align:center;"></i>
-                        Gerenciar KRs
-                        <span class="badge-new" style="margin-left:4px;">novo</span>
+                        Ações Rápidas
                       </a>
                     </div>
                   </div>
                   <span class="action-icon" title="Habilitar / Desabilitar Objetivo" style="cursor:pointer;">
                     <img src="assets/img/ico_ligado.gif" alt="Habilitar/Desabilitar" />
                   </span>
-                  <button class="icon-kr" title="Gerenciar Key Results (KRs)"
-                    onclick="openDrawer('Melhorar Retenção de Clientes', 2)">KR</button>
+                  <button class="icon-kr" title="Ver Detalhes">KR</button>
                   <span class="action-icon" title="Editar objetivo" style="cursor:pointer;">
                     <img src="assets/img/ico-lupa.gif" alt="Editar" />
                   </span>
@@ -477,19 +474,16 @@ export const ComSubmenuAcoes = {
                         Associar atividades
                       </a>
                       <div class="legacy-action-submenu-separator"></div>
-                      <a class="legacy-action-submenu-item"
-                        onclick="openDrawer('Reduzir Custos Operacionais', 3); closeAllMenus();">
+                      <a class="legacy-action-submenu-item" onclick="alert('Funcionalidade em desenvolvimento'); closeAllMenus();">
                         <i class="fa fa-key" style="margin-right:4px;font-size:12px;width:14px;text-align:center;"></i>
-                        Gerenciar KRs
-                        <span class="badge-new" style="margin-left:4px;">novo</span>
+                        Ações Rápidas
                       </a>
                     </div>
                   </div>
                   <span class="action-icon" title="Habilitar / Desabilitar Objetivo" style="cursor:pointer;">
                     <img src="assets/img/ico_ligado.gif" alt="Habilitar/Desabilitar" />
                   </span>
-                  <button class="icon-kr" title="Gerenciar Key Results (KRs)"
-                    onclick="openDrawer('Reduzir Custos Operacionais', 3)">KR</button>
+                  <button class="icon-kr" title="Ver Detalhes">KR</button>
                   <span class="action-icon" title="Editar objetivo" style="cursor:pointer;">
                     <img src="assets/img/ico-lupa.gif" alt="Editar" />
                   </span>
@@ -534,19 +528,16 @@ export const ComSubmenuAcoes = {
                         Associar atividades
                       </a>
                       <div class="legacy-action-submenu-separator"></div>
-                      <a class="legacy-action-submenu-item"
-                        onclick="openDrawer('Expandir Presença Digital', 4); closeAllMenus();">
+                      <a class="legacy-action-submenu-item" onclick="alert('Funcionalidade em desenvolvimento'); closeAllMenus();">
                         <i class="fa fa-key" style="margin-right:4px;font-size:12px;width:14px;text-align:center;"></i>
-                        Gerenciar KRs
-                        <span class="badge-new" style="margin-left:4px;">novo</span>
+                        Ações Rápidas
                       </a>
                     </div>
                   </div>
                   <span class="action-icon" title="Habilitar / Desabilitar Objetivo" style="cursor:pointer;">
                     <img src="assets/img/ico_ligado.gif" alt="Habilitar/Desabilitar" />
                   </span>
-                  <button class="icon-kr" title="Gerenciar Key Results (KRs) — sem KRs cadastrados"
-                    onclick="openDrawer('Expandir Presença Digital', 4)">KR</button>
+                  <button class="icon-kr" title="Ver Detalhes">KR</button>
                   <span class="action-icon" title="Editar objetivo" style="cursor:pointer;">
                     <img src="assets/img/ico-lupa.gif" alt="Editar" />
                   </span>

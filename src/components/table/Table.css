@@ -12,6 +12,29 @@
   font-family: var(--chn-font-family);
 }
 
+/* Responsive Wrapper */
+.chn-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  background: var(--chn-color-white);
+  border: 1px solid var(--chn-color-gray-400);
+  margin-bottom: var(--chn-margin-xs);
+}
+
+/* Ensure the table doesn't compress too much when inside the responsive wrapper */
+.chn-table-responsive .legacy-table {
+  min-width: 1000px; /* Default minimum width for complex tables in DS */
+  border: none !important;
+}
+
+.chn-table-responsive .legacy-pagination {
+  min-width: 1000px;
+  border: none;
+  border-top: 1px solid var(--chn-color-gray-400);
+}
+
 .legacy-table thead tr {
   background: var(--chn-color-gray-200);
   border-bottom: 1px solid var(--chn-color-gray-400);
@@ -27,7 +50,7 @@
 }
 
 .legacy-table td {
-  padding: 4px var(--chn-padding-xs);
+  padding: 2px var(--chn-padding-xs);
   border-right: 1px solid var(--chn-color-gray-400);
   color: var(--chn-color-gray-900);
   vertical-align: middle;
@@ -35,12 +58,14 @@
 
 .legacy-table tbody tr {
   border-bottom: 1px solid var(--chn-color-gray-300);
-  background: #F9F9F9; /* Base gray instead of white */
+  background: #F9F9F9;
+  /* Base gray instead of white */
   height: var(--chn-height-row-standard);
 }
 
 .legacy-table tbody tr:nth-child(even) {
-  background: #F1F1F1; /* Darker zebra gray */
+  background: #F1F1F1;
+  /* Darker zebra gray */
 }
 
 .legacy-table tbody tr:hover {
@@ -100,7 +125,7 @@
 }
 
 .legacy-table tbody tr.row-status-active {
-  background-color: #E8F4F8 !important; 
+  background-color: #E8F4F8 !important;
 }
 
 /* Pagination styles */
@@ -153,7 +178,8 @@
 
 .legacy-table tr.accordion-row-details {
   background: var(--chn-color-white) !important;
-  display: none; /* Collapsed by default */
+  display: none;
+  /* Collapsed by default */
 }
 
 .legacy-table tr.accordion-row-details.is-open {
@@ -183,11 +209,13 @@
 }
 
 .nested-table thead tr {
-  background: #D0D7E5; /* Specific light blue for nested headers */
+  background: #D0D7E5;
+  /* Specific light blue for nested headers */
   border-bottom: 1px solid var(--chn-color-gray-400);
 }
 
-.nested-table th, .nested-table td {
+.nested-table th,
+.nested-table td {
   padding: 4px 8px;
   border-right: 1px solid var(--chn-color-gray-400);
   text-align: left;
@@ -240,10 +268,11 @@
   display: none;
   position: absolute;
   top: 100%;
-  right: 0; /* Drops to the left from the triggering icon */
+  right: 0;
+  /* Drops to the left from the triggering icon */
   background: #EBEBEB;
   border: 1px solid #A0A0A0;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   z-index: 1000;
   min-width: 160px;
   padding: 0;
@@ -274,4 +303,3 @@
 .legacy-action-submenu-item img {
   width: 16px;
 }
-
