@@ -1,9 +1,12 @@
-/**
+﻿/**
  * Navbar.css
- * Legacy Navbar fiel ao sistema em produção
+ * Legacy Navbar fiel ao sistema em produÃ§Ã£o
  */
 
-/* ─── Barra principal ─────────────────────────────────────── */
+/* Garantir ícones Font Awesome no uso standalone (CDN/HTML puro). */
+@import url('../../assets/fonts/font-awesome/css/font-awesome.css');
+
+/* â”€â”€â”€ Barra principal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .legacy-navbar {
   background-color: var(--chn-color-navbar);
   /* #2F313E */
@@ -20,7 +23,7 @@
   flex-shrink: 0;
 }
 
-/* ─── Botão Home ──────────────────────────────────────────── */
+/* â”€â”€â”€ BotÃ£o Home â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-home {
   display: flex;
   font-size: 18px;
@@ -39,14 +42,14 @@
   color: #2F313E;
 }
 
-/* ─── Item de menu (wrapper relativo para o dropdown) ─────── */
+/* â”€â”€â”€ Item de menu (wrapper relativo para o dropdown) â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-item {
   position: relative;
   display: flex;
   align-items: stretch;
 }
 
-/* ─── Trigger (área clicável do item) ─────────────────────── */
+/* â”€â”€â”€ Trigger (Ã¡rea clicÃ¡vel do item) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-item-trigger {
   display: flex;
   align-items: center;
@@ -71,7 +74,7 @@
   border-bottom: 2px solid #F4F5F6;
 }
 
-/* Estado active-page (padrão transparente, texto laranja) */
+/* Estado active-page (padrÃ£o transparente, texto laranja) */
 .navbar-item.is-active-page>.navbar-item-trigger {
   background: transparent;
   color: #F97316 !important;
@@ -92,7 +95,7 @@
   font-size: 13px;
 }
 
-/* Ícones SVG dos módulos na navbar */
+/* Ãcones SVG dos mÃ³dulos na navbar */
 .navbar-item-trigger .navbar-module-icon {
   width: 16px;
   height: 16px;
@@ -104,7 +107,7 @@
 
 .navbar-item.is-open>.navbar-item-trigger .navbar-module-icon {
   filter: brightness(0);
-  /* preto quando tab está aberta (fundo branco) */
+  /* preto quando tab estÃ¡ aberta (fundo branco) */
 }
 
 .navbar-item-trigger:hover .navbar-module-icon {
@@ -112,7 +115,7 @@
   /* escuro no hover (fundo claro) */
 }
 
-/* ─── Itens sem dropdown (? e info) ──────────────────────── */
+/* â”€â”€â”€ Itens sem dropdown (? e info) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-item-plain {
   display: flex;
   align-items: center;
@@ -132,7 +135,7 @@
   font-size: 16px;
 }
 
-/* ─── Painel dropdown ─────────────────────────────────────── */
+/* â”€â”€â”€ Painel dropdown â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-dropdown {
   display: none;
   position: absolute;
@@ -152,7 +155,7 @@
   display: flex;
 }
 
-/* Dropdown de coluna única (Administração) */
+/* Dropdown de coluna Ãºnica (AdministraÃ§Ã£o) */
 .navbar-dropdown.is-single-col {
   min-width: 280px;
   flex-direction: column;
@@ -160,7 +163,7 @@
   padding: 8px 0;
 }
 
-/* ─── Coluna dentro do dropdown ───────────────────────────── */
+/* â”€â”€â”€ Coluna dentro do dropdown â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-dropdown-col {
   display: flex;
   flex-direction: column;
@@ -172,14 +175,14 @@
   min-width: 220px;
 }
 
-/* ─── Seção dentro de uma coluna ──────────────────────────── */
+/* â”€â”€â”€ SeÃ§Ã£o dentro de uma coluna â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-section {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-/* ─── Título de seção (com ícone) ─────────────────────────── */
+/* â”€â”€â”€ TÃ­tulo de seÃ§Ã£o (com Ã­cone) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-section-title {
   display: flex;
   align-items: center;
@@ -198,7 +201,7 @@
   text-align: center;
 }
 
-/* ─── Lista de sub-itens ──────────────────────────────────── */
+/* â”€â”€â”€ Lista de sub-itens â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-section-items {
   list-style: disc;
   padding-left: 20px;
@@ -239,7 +242,7 @@
   color: #1a5fa0;
 }
 
-/* ─── Links diretos (sem sub-lista): Estratégia, Desempenho ── */
+/* â”€â”€â”€ Links diretos (sem sub-lista): EstratÃ©gia, Desempenho â”€â”€ */
 .navbar-direct-link {
   display: flex;
   align-items: center;
@@ -268,7 +271,7 @@
   color: var(--chn-color-menu-hover);
 }
 
-/* ─── Itens de coluna única (Administração) ───────────────── */
+/* â”€â”€â”€ Itens de coluna Ãºnica (AdministraÃ§Ã£o) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-admin-item {
   display: flex;
   align-items: center;
@@ -298,7 +301,7 @@
   color: var(--chn-color-menu-hover);
 }
 
-/* ─── Separador vertical entre colunas ───────────────────── */
+/* â”€â”€â”€ Separador vertical entre colunas â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar-col-divider {
   width: 1px;
   background: #e0e0e0;

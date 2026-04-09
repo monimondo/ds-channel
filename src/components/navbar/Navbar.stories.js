@@ -1,9 +1,9 @@
-/**
- * Navbar — Legacy Channel
+﻿/**
+ * Navbar â€” Legacy Channel
  *
- * Fiel ao sistema em produção.
- * Cada story abre um menu diferente para inspeção visual.
- * A story "Interativo" simula navegação real com clique.
+ * Fiel ao sistema em produÃ§Ã£o.
+ * Cada story abre um menu diferente para inspeÃ§Ã£o visual.
+ * A story "Interativo" simula navegaÃ§Ã£o real com clique.
  */
 import './Navbar.css';
 
@@ -16,15 +16,15 @@ export default {
     docs: {
       description: {
         component:
-          'Barra de navegação principal do sistema Channel. Usa tokens do Design System e ícones Font Awesome 4.',
+          'Barra de navegaÃ§Ã£o principal do sistema Channel. Usa tokens do Design System e Ã­cones Font Awesome 4.',
       },
     },
   },
 };
 
-/* ─────────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    HTML dos dropdowns
-   ───────────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 const dropdownMeuChannel = `
   <div class="navbar-dropdown">
@@ -32,7 +32,7 @@ const dropdownMeuChannel = `
     <div class="navbar-dropdown-col">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-refresh"></i> Operações
+          <i class="fa fa-refresh"></i> OperaÃ§Ãµes
         </div>
         <ul class="navbar-section-items">
           <li><a href="#">Minhas demandas abertas</a></li>
@@ -43,12 +43,12 @@ const dropdownMeuChannel = `
       </div>
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-bar-chart"></i> Reuniões
+          <i class="fa fa-bar-chart"></i> ReuniÃµes
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Ações das reuniões</a></li>
-          <li><a href="#">Decisões das reuniões</a></li>
-          <li><a href="#">Minhas reuniões</a></li>
+          <li><a href="#">AÃ§Ãµes das reuniÃµes</a></li>
+          <li><a href="#">DecisÃµes das reuniÃµes</a></li>
+          <li><a href="#">Minhas reuniÃµes</a></li>
         </ul>
       </div>
     </div>
@@ -59,20 +59,20 @@ const dropdownMeuChannel = `
     <div class="navbar-dropdown-col">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-briefcase"></i> Portfólios
+          <i class="fa fa-briefcase"></i> PortfÃ³lios
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Proposição de projetos</a></li>
+          <li><a href="#">ProposiÃ§Ã£o de projetos</a></li>
         </ul>
       </div>
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-file-text-o"></i> Planos de ação
+          <i class="fa fa-file-text-o"></i> Planos de aÃ§Ã£o
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Meus planos de ação</a></li>
-          <li><a href="#">Minhas ações</a></li>
-          <li><a href="#">Minhas aprovações</a></li>
+          <li><a href="#">Meus planos de aÃ§Ã£o</a></li>
+          <li><a href="#">Minhas aÃ§Ãµes</a></li>
+          <li><a href="#">Minhas aprovaÃ§Ãµes</a></li>
         </ul>
       </div>
     </div>
@@ -86,10 +86,10 @@ const dropdownMeuChannel = `
           <i class="fa fa-line-chart"></i> Indicadores
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Indicadores que sou responsável</a></li>
-          <li><a href="#">Aprovações de medições pendentes</a></li>
-          <li><a href="#">Relatório de medições pendentes</a></li>
-          <li><a href="#">Minhas medições reprovadas</a></li>
+          <li><a href="#">Indicadores que sou responsÃ¡vel</a></li>
+          <li><a href="#">AprovaÃ§Ãµes de mediÃ§Ãµes pendentes</a></li>
+          <li><a href="#">RelatÃ³rio de mediÃ§Ãµes pendentes</a></li>
+          <li><a href="#">Minhas mediÃ§Ãµes reprovadas</a></li>
         </ul>
       </div>
       <div class="navbar-section">
@@ -112,13 +112,13 @@ const dropdownPlanoEstrategico = `
     <div class="navbar-dropdown-col">
       <a class="navbar-direct-link" href="#"><i class="fa fa-flag"></i> Objetivos</a>
       <a class="navbar-direct-link" href="#"><i class="fa fa-puzzle-piece"></i> Diretrizes</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-puzzle-piece"></i> Mapa estratégico</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-bar-chart"></i> Reuniões</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-puzzle-piece"></i> Mapa estratÃ©gico</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-bar-chart"></i> ReuniÃµes</a>
     </div>
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 2: Desempenho e Configurações -->
+    <!-- Coluna 2: Desempenho e ConfiguraÃ§Ãµes -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
@@ -126,17 +126,17 @@ const dropdownPlanoEstrategico = `
         </div>
         <ul class="navbar-section-items">
           <li><a href="#">Planejamento de metas</a></li>
-          <li><a href="#">Medições de indicadores</a></li>
+          <li><a href="#">MediÃ§Ãµes de indicadores</a></li>
         </ul>
       </div>
       <div class="navbar-section" style="margin-top: 12px;">
         <div class="navbar-section-title">
-          <i class="fa fa-cog"></i> Configurações
+          <i class="fa fa-cog"></i> ConfiguraÃ§Ãµes
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Revisões</a></li>
+          <li><a href="#">RevisÃµes</a></li>
           <li><a href="#">Perspectivas</a></li>
-          <li><a href="#">Temas Estratégicos</a></li>
+          <li><a href="#">Temas EstratÃ©gicos</a></li>
           <li><a href="#" class="link-more">Ver mais</a></li>
         </ul>
       </div>
@@ -144,14 +144,14 @@ const dropdownPlanoEstrategico = `
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 3: Relatórios -->
+    <!-- Coluna 3: RelatÃ³rios -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-list"></i> Relatórios
+          <i class="fa fa-list"></i> RelatÃ³rios
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Acompanhamento de desempenho estratégico</a></li>
+          <li><a href="#">Acompanhamento de desempenho estratÃ©gico</a></li>
         </ul>
       </div>
     </div>
@@ -162,41 +162,41 @@ const dropdownEstrategia = `
   <div class="navbar-dropdown">
     <!-- Coluna 1: links diretos -->
     <div class="navbar-dropdown-col">
-      <a class="navbar-direct-link" href="#"><i class="fa fa-plus-square-o"></i> Planos estratégicos</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-plus-square-o"></i> Planos estratÃ©gicos</a>
       <a class="navbar-direct-link" href="#"><i class="fa fa-flag"></i> Objetivos operacionais</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-briefcase"></i> Portfólios</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-briefcase"></i> PortfÃ³lios</a>
       <a class="navbar-direct-link" href="#"><i class="fa fa-th-list"></i> Programas</a>
       <a class="navbar-direct-link" href="#"><i class="fa fa-exclamation-triangle"></i> Riscos corporativos</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-calendar"></i> Acompanhamento de reuniões</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-calendar"></i> Acompanhamento de reuniÃµes</a>
     </div>
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 2: Relatórios -->
+    <!-- Coluna 2: RelatÃ³rios -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-bar-chart"></i> Relatórios
+          <i class="fa fa-bar-chart"></i> RelatÃ³rios
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Acompanhamento de desempenho estratégico</a></li>
-          <li><a href="#">Visualização de planos estratégicos</a></li>
+          <li><a href="#">Acompanhamento de desempenho estratÃ©gico</a></li>
+          <li><a href="#">VisualizaÃ§Ã£o de planos estratÃ©gicos</a></li>
         </ul>
       </div>
     </div>
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 3: Configurações -->
+    <!-- Coluna 3: ConfiguraÃ§Ãµes -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-cog"></i> Configurações
+          <i class="fa fa-cog"></i> ConfiguraÃ§Ãµes
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Catálogo de processos</a></li>
+          <li><a href="#">CatÃ¡logo de processos</a></li>
           <li><a href="#">Categorias de fator de risco</a></li>
-          <li><a href="#">Categorias de reuniões</a></li>
+          <li><a href="#">Categorias de reuniÃµes</a></li>
           <li><a href="#">Consulta propostas de projetos</a></li>
         </ul>
       </div>
@@ -209,26 +209,26 @@ const dropdownDesempenho = `
     <!-- Coluna 1: links diretos -->
     <div class="navbar-dropdown-col">
       <a class="navbar-direct-link" href="#"><i class="fa fa-calendar-check-o"></i> Planejamento de metas</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-line-chart"></i> Medições de indicador</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-file-text-o"></i> Planos de ação</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-line-chart"></i> MediÃ§Ãµes de indicador</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-file-text-o"></i> Planos de aÃ§Ã£o</a>
     </div>
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 2: Relatórios -->
+    <!-- Coluna 2: RelatÃ³rios -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-bar-chart"></i> Relatórios
+          <i class="fa fa-bar-chart"></i> RelatÃ³rios
         </div>
         <ul class="navbar-section-items">
           <li><a href="#">Acompanhamento de indicadores</a></li>
-          <li><a href="#">Visão histórica de indicadores</a></li>
+          <li><a href="#">VisÃ£o histÃ³rica de indicadores</a></li>
           <li><a href="#">Benchmarking de indicadores</a></li>
-          <li><a href="#">Acompanhamento de planos de ação</a></li>
-          <li><a href="#">Consolidado de ações</a></li>
-          <li><a href="#">Painéis de controle</a></li>
-          <li><a href="#">Apresentação de painéis de controle</a></li>
+          <li><a href="#">Acompanhamento de planos de aÃ§Ã£o</a></li>
+          <li><a href="#">Consolidado de aÃ§Ãµes</a></li>
+          <li><a href="#">PainÃ©is de controle</a></li>
+          <li><a href="#">ApresentaÃ§Ã£o de painÃ©is de controle</a></li>
           <li><a href="#">Painel de indicadores de projetos</a></li>
         </ul>
       </div>
@@ -236,16 +236,16 @@ const dropdownDesempenho = `
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 3: Configurações -->
+    <!-- Coluna 3: ConfiguraÃ§Ãµes -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-cog"></i> Configurações
+          <i class="fa fa-cog"></i> ConfiguraÃ§Ãµes
         </div>
         <ul class="navbar-section-items">
           <li><a href="#">Indicadores</a></li>
-          <li><a href="#">Faixas de atenção</a></li>
-          <li><a href="#">Configurações de alertas de indicadores</a></li>
+          <li><a href="#">Faixas de atenÃ§Ã£o</a></li>
+          <li><a href="#">ConfiguraÃ§Ãµes de alertas de indicadores</a></li>
           <li><a href="#" class="link-more">Ver mais</a></li>
         </ul>
       </div>
@@ -258,25 +258,25 @@ const dropdownProjetosEDemandas = `
     <!-- Coluna 1: links diretos -->
     <div class="navbar-dropdown-col">
       <a class="navbar-direct-link" href="#"><i class="fa fa-list-alt"></i> Projetos</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-refresh"></i> Operações</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-refresh"></i> OperaÃ§Ãµes</a>
       <a class="navbar-direct-link" href="#"><i class="fa fa-file-text"></i> Contratos</a>
       <a class="navbar-direct-link" href="#"><i class="fa fa-folder-open-o"></i> Documentos compartilhados</a>
-      <a class="navbar-direct-link" href="#"><i class="fa fa-share-alt"></i> Lições aprendidas</a>
+      <a class="navbar-direct-link" href="#"><i class="fa fa-share-alt"></i> LiÃ§Ãµes aprendidas</a>
       <a class="navbar-direct-link" href="#"><i class="fa fa-pencil"></i> Painel de apontamentos</a>
     </div>
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 2: Relatórios -->
+    <!-- Coluna 2: RelatÃ³rios -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-bar-chart"></i> Relatórios
+          <i class="fa fa-bar-chart"></i> RelatÃ³rios
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Relatórios personalizados</a></li>
-          <li><a href="#">Mapa de alocação</a></li>
-          <li><a href="#">Acompanhamento da execução de projetos</a></li>
+          <li><a href="#">RelatÃ³rios personalizados</a></li>
+          <li><a href="#">Mapa de alocaÃ§Ã£o</a></li>
+          <li><a href="#">Acompanhamento da execuÃ§Ã£o de projetos</a></li>
           <li><a href="#">Controle previsto x realizado</a></li>
           <li><a href="#">Desempenho de projetos</a></li>
           <li><a href="#">Problemas de projetos</a></li>
@@ -292,16 +292,16 @@ const dropdownProjetosEDemandas = `
 
     <div class="navbar-col-divider"></div>
 
-    <!-- Coluna 3: Configurações + Carga -->
+    <!-- Coluna 3: ConfiguraÃ§Ãµes + Carga -->
     <div class="navbar-dropdown-col col-wide">
       <div class="navbar-section">
         <div class="navbar-section-title">
-          <i class="fa fa-cog"></i> Configurações
+          <i class="fa fa-cog"></i> ConfiguraÃ§Ãµes
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Calendários</a></li>
+          <li><a href="#">CalendÃ¡rios</a></li>
           <li><a href="#">Fluxos de trabalho</a></li>
-          <li><a href="#">Formulários padrão</a></li>
+          <li><a href="#">FormulÃ¡rios padrÃ£o</a></li>
           <li><a href="#" class="link-more">Ver mais</a></li>
         </ul>
       </div>
@@ -310,7 +310,7 @@ const dropdownProjetosEDemandas = `
           <i class="fa fa-upload"></i> Carga
         </div>
         <ul class="navbar-section-items">
-          <li><a href="#">Importação de custos realizados multi projetos</a></li>
+          <li><a href="#">ImportaÃ§Ã£o de custos realizados multi projetos</a></li>
         </ul>
       </div>
     </div>
@@ -319,67 +319,77 @@ const dropdownProjetosEDemandas = `
 
 const dropdownAdministracao = `
   <div class="navbar-dropdown is-single-col">
-    <a class="navbar-admin-item" href="#"><i class="fa fa-user"></i> Usuários</a>
+    <a class="navbar-admin-item" href="#"><i class="fa fa-user"></i> UsuÃ¡rios</a>
     <a class="navbar-admin-item" href="#"><i class="fa fa-users"></i> Grupos</a>
     <a class="navbar-admin-item" href="#"><i class="fa fa-building"></i> Empresas</a>
     <a class="navbar-admin-item" href="#"><i class="fa fa-sitemap"></i> Estrutura organizacional</a>
     <a class="navbar-admin-item" href="#"><i class="fa fa-search"></i> Trilha de auditoria</a>
-    <a class="navbar-admin-item" href="#"><i class="fa fa-envelope-o"></i> Histórico de e-mails enviados</a>
-    <a class="navbar-admin-item" href="#"><i class="fa fa-file-o"></i> Histórico de importações de propostas</a>
-    <a class="navbar-admin-item" href="#"><i class="fa fa-list"></i> Log Integração Compromisso</a>
-    <a class="navbar-admin-item" href="#"><i class="fa fa-cog"></i> Configurações gerais</a>
+    <a class="navbar-admin-item" href="#"><i class="fa fa-envelope-o"></i> HistÃ³rico de e-mails enviados</a>
+    <a class="navbar-admin-item" href="#"><i class="fa fa-file-o"></i> HistÃ³rico de importaÃ§Ãµes de propostas</a>
+    <a class="navbar-admin-item" href="#"><i class="fa fa-list"></i> Log IntegraÃ§Ã£o Compromisso</a>
+    <a class="navbar-admin-item" href="#"><i class="fa fa-cog"></i> ConfiguraÃ§Ãµes gerais</a>
     <a class="navbar-admin-item" href="#"><i class="fa fa-database"></i> Configurar Fontes de Dados</a>
   </div>
 `;
 
-/* ─────────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    Builder da navbar
-   ───────────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 function buildNavbar(openMenu = null, contextMenu = null) {
+  const assetsBase = (() => {
+    if (typeof window !== 'undefined' && window.CHANNEL_DS_BASE) {
+      return window.CHANNEL_DS_BASE.endsWith('/')
+        ? window.CHANNEL_DS_BASE
+        : `${window.CHANNEL_DS_BASE}/`;
+    }
+    // Storybook serve `staticDirs` em `/assets/*`.
+    return '/';
+  })();
+
   const items = [];
 
-  // Se houver um menu de contexto como Plano Estratégico ativo na tela
+  // Se houver um menu de contexto como Plano EstratÃ©gico ativo na tela
   if (contextMenu === 'plano-estrategico') {
     items.push({
       id: 'plano-estrategico',
       iconFa: 'fa-puzzle-piece',
-      label: 'Plano estratégico',
+      label: 'Plano estratÃ©gico',
       dropdown: dropdownPlanoEstrategico, // Vinculando o dropdown correto agora
       isActiveOverride: true
     });
   }
 
-  // Menus padrão do sistema
+  // Menus padrÃ£o do sistema
   items.push(
     {
       id: 'meu-channel',
-      iconSvg: '/assets/img/meu_channel_menul.svg',
+      iconSvg: assetsBase + 'assets/img/meu_channel_menul.svg',
       label: 'Meu Channel',
       dropdown: dropdownMeuChannel,
     },
     {
       id: 'estrategia',
-      iconSvg: '/assets/img/estrategia_menu.svg',
-      label: 'Estratégia',
+      iconSvg: assetsBase + 'assets/img/estrategia_menu.svg',
+      label: 'EstratÃ©gia',
       dropdown: dropdownEstrategia,
     },
     {
       id: 'desempenho',
-      iconSvg: '/assets/img/desempenho_menu.svg',
+      iconSvg: assetsBase + 'assets/img/desempenho_menu.svg',
       label: 'Desempenho',
       dropdown: dropdownDesempenho,
     },
     {
       id: 'projetos-demandas',
-      iconSvg: '/assets/img/projetos_demandas_menu.svg',
+      iconSvg: assetsBase + 'assets/img/projetos_demandas_menu.svg',
       label: 'Projetos e demandas',
       dropdown: dropdownProjetosEDemandas,
     },
     {
       id: 'administracao',
-      iconSvg: '/assets/img/administracao_meni.svg',
-      label: 'Administração',
+      iconSvg: assetsBase + 'assets/img/administracao_meni.svg',
+      label: 'AdministraÃ§Ã£o',
       dropdown: dropdownAdministracao,
     },
   );
@@ -416,9 +426,9 @@ function buildNavbar(openMenu = null, contextMenu = null) {
   `;
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    Script de interatividade (clique para abrir/fechar)
-   ───────────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 function attachNavbarBehavior() {
   return `
@@ -458,52 +468,52 @@ function attachNavbarBehavior() {
   `;
 }
 
-/* ─────────────────────────────────────────────────────────────
-   Stories - Navbar Padrão
-   ───────────────────────────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Stories - Navbar PadrÃ£o
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 export const Default = {
-  name: 'Padrão (fechado)',
+  name: 'PadrÃ£o (fechado)',
   render: () => buildNavbar(),
 };
 
-/* ─────────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    Stories - Navbar com Contexto
-   ───────────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 export const ContextoEstrategicoFechado = {
-  name: 'Contexto: Plano estratégico (fechado)',
+  name: 'Contexto: Plano estratÃ©gico (fechado)',
   render: () => buildNavbar(null, 'plano-estrategico'),
   parameters: {
     docs: {
-      description: { story: 'Menu Navbar carregado com o ambiente contextual do plano estratégico sem abrir o menu.' },
+      description: { story: 'Menu Navbar carregado com o ambiente contextual do plano estratÃ©gico sem abrir o menu.' },
     },
   },
 };
 
 export const ContextoEstrategicoAberto = {
-  name: 'Contexto: Plano estratégico (aberto)',
+  name: 'Contexto: Plano estratÃ©gico (aberto)',
   render: () => buildNavbar('plano-estrategico', 'plano-estrategico'),
   parameters: {
     docs: {
-      description: { story: 'Exibe o menu contextual dinâmico já expandido demonstrando os links e diretrizes.' },
+      description: { story: 'Exibe o menu contextual dinÃ¢mico jÃ¡ expandido demonstrando os links e diretrizes.' },
     },
   },
 };
 
 export const ContextoEstrategicoInterativo = {
-  name: '▶ Contexto: Plano estratégico (Interativo)',
+  name: 'â–¶ Contexto: Plano estratÃ©gico (Interativo)',
   render: () => buildNavbar(null, 'plano-estrategico') + attachNavbarBehavior(),
   parameters: {
     docs: {
-      description: { story: 'Testa a abertura e fechamento das abas do Navbar com módulo contextual carregado.' },
+      description: { story: 'Testa a abertura e fechamento das abas do Navbar com mÃ³dulo contextual carregado.' },
     },
   },
 };
 
-/* ─────────────────────────────────────────────────────────────
-   Módulos Padrões Abertos
-   ───────────────────────────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   MÃ³dulos PadrÃµes Abertos
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 /** Meu Channel aberto */
 export const MeuChannel = {
@@ -511,18 +521,18 @@ export const MeuChannel = {
   render: () => buildNavbar('meu-channel'),
   parameters: {
     docs: {
-      description: { story: 'Atalhos pessoais do usuário: Operações, Reuniões, Portfólios, Planos de ação, Indicadores e Riscos.' },
+      description: { story: 'Atalhos pessoais do usuÃ¡rio: OperaÃ§Ãµes, ReuniÃµes, PortfÃ³lios, Planos de aÃ§Ã£o, Indicadores e Riscos.' },
     },
   },
 };
 
-/** Estratégia aberto */
+/** EstratÃ©gia aberto */
 export const Estrategia = {
-  name: 'Estratégia',
+  name: 'EstratÃ©gia',
   render: () => buildNavbar('estrategia'),
   parameters: {
     docs: {
-      description: { story: 'Módulo de planejamento estratégico: links diretos, Relatórios e Configurações.' },
+      description: { story: 'MÃ³dulo de planejamento estratÃ©gico: links diretos, RelatÃ³rios e ConfiguraÃ§Ãµes.' },
     },
   },
 };
@@ -533,7 +543,7 @@ export const Desempenho = {
   render: () => buildNavbar('desempenho'),
   parameters: {
     docs: {
-      description: { story: 'Indicadores e planos de ação: Planejamento de metas, Medições, Relatórios e Configurações.' },
+      description: { story: 'Indicadores e planos de aÃ§Ã£o: Planejamento de metas, MediÃ§Ãµes, RelatÃ³rios e ConfiguraÃ§Ãµes.' },
     },
   },
 };
@@ -544,32 +554,34 @@ export const ProjetosEDemandas = {
   render: () => buildNavbar('projetos-demandas'),
   parameters: {
     docs: {
-      description: { story: 'Gestão de projetos e demandas: links diretos, Relatórios, Configurações e Carga.' },
+      description: { story: 'GestÃ£o de projetos e demandas: links diretos, RelatÃ³rios, ConfiguraÃ§Ãµes e Carga.' },
     },
   },
 };
 
-/** Administração aberto */
+/** AdministraÃ§Ã£o aberto */
 export const Administracao = {
-  name: 'Administração',
+  name: 'AdministraÃ§Ã£o',
   render: () => buildNavbar('administracao'),
   parameters: {
     docs: {
-      description: { story: 'Configurações de sistema e cadastros: lista simples de itens com ícone.' },
+      description: { story: 'ConfiguraÃ§Ãµes de sistema e cadastros: lista simples de itens com Ã­cone.' },
     },
   },
 };
 
-/** Story interativa — clique para abrir/fechar menus */
+/** Story interativa â€” clique para abrir/fechar menus */
 export const Interativo = {
-  name: '▶ Interativo (clique nos menus)',
+  name: 'â–¶ Interativo (clique nos menus)',
   render: () => buildNavbar() + attachNavbarBehavior(),
   parameters: {
     docs: {
       description: {
         story:
-          'Simula a navegação real: clique em qualquer item da barra para abrir o submenu. Clique fora ou em outro item para fechar.',
+          'Simula a navegaÃ§Ã£o real: clique em qualquer item da barra para abrir o submenu. Clique fora ou em outro item para fechar.',
       },
     },
   },
 };
+
+
