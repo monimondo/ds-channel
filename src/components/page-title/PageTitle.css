@@ -1,0 +1,72 @@
+.chn-page-title-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.chn-page-title-bar .chn-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    text-transform: none;
+}
+
+/* Force legacy select look even with Bootstrap load */
+.chn-page-title-bar select.chn-input,
+.chn-page-title-bar select.form-select {
+    border: 1px solid #CCCCCC !important;
+    height: 22px !important;
+    font-size: 11px !important;
+    padding: 2px 4px !important;
+    outline: none !important;
+    background-color: #fff !important;
+    width: auto !important;
+    min-width: 120px;
+    border-radius: 0 !important;
+    line-height: 1 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
+/* Version for table headers */
+.chn-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+    border-bottom: 1px solid !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chn-section-header .chn-section-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.chn-info-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background: #5C9FD6;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}

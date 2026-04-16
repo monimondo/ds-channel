@@ -1,0 +1,11 @@
+.chn-footer {
+    padding: 24px;
+    text-align: center;
+    color: #888888;
+    font-size: 11px;
+    border-top: 1px solid #EEEEEE;
+    background-color: #ffffff;
+    font-family: var(--chn-font-family);
+    width: 100%;
+    box-sizing: border-box;
+}

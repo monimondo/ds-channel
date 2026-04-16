@@ -1,0 +1,23 @@
+.chn-breadcrumb {
+    background-color: #ddd;
+    border-bottom: 1px solid #D5D5D5;
+    padding: 6px 16px;
+    font-size: 11px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--chn-font-family);
+    min-height: 32px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.chn-breadcrumb span {
+    font-weight: bold;
+}
+
+.chn-breadcrumb,
+.chn-path {
+    font-family: inherit;
+}
